@@ -11,11 +11,125 @@
     --Very-Dark-Blue: hsl(209, 33%, 12%);
 }
 
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile First */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Section */
+header {
+    padding: 2em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+#logo {
+    width: 80%;
+}
+
+/* Main Section */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--Gray);
+    margin-bottom: 1em;
+}
+
+main h1 strong {
+    color: var(--Very-Dark-Blue);
+}
+
+main p {
+    font-size: .7rem;
+    font-weight: 300;
+    color: var(--Very-Dark-Blue);
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    width: 80vw;
+}
+
+main form input {
+    width: 100%;
+    line-height: 50px;
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 25px;
+    padding-left: 3em;
+    margin-bottom: 1em;
+}
+
+main form input:focus {
+    outline: none;
+    border: 1px solid var(--Blue);
+}
+
+main form input::placeholder {
+    color: var(--Pale-Blue);
+}
+
+main form button {
+    width: 100%;
+    line-height: 50px;
+    background-color: var(--Blue);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 3px 5px 10px 0 var(--Pale-Blue);
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+main form button:hover {
+    opacity: .8;
+}
+
+main #hero-img {
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+/* Social Links Section */
+#social ul li {
+    float: left;
+    list-style: none;
+    color: var(--Blue);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 4em .5rem 0 .5rem;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    padding: 2em;
+}
 
 .attribution,
 .copyright { 
     font-size: 12px; 
-    text-align: center; 
+    text-align: center;
 }
 
 .attribution a { 
