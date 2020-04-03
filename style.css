@@ -125,7 +125,7 @@ main #hero-img {
 }
 
 /* Social Links Section */
-#social ul li {
+#social li {
     float: left;
     list-style: none;
     color: var(--Blue);
@@ -139,7 +139,7 @@ main #hero-img {
     cursor: pointer;
 }
 
-#social ul li:hover {
+#social li:hover {
     color: white;
     background-color: var(--Blue);
     border: none;
